@@ -1,0 +1,47 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Products collection: public read, admin only write
+    match /products/{productId} {
+      allow read: if true;
+      allow write: if false; // Only server / admin SDK
+      
+      match /variants/{variantId} {
+        allow read: if true;
+        allow write: if false;
+      }
+    }
+
+    // Platform listings: public read, admin write
+    match /platform_listings/{listingId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Price observations: time-series log of prices across platforms
+    match /price_observations/{obsId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // Availability observations: out-of-stock logs
+    match /availability_observations/{obsId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    // User preferences & saved carts (optional auth)
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      match /preferences/{prefId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+      
+      match /search_history/{historyId} {
+        allow read, write: if request.auth != null && request.auth.uid == userId;
+      }
+    }
+  }
+}
