@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "quickcompare — India's Quick-Commerce Comparison",
+  title: "SmartCart — India's Quick-Commerce Comparison",
   description:
     "Don't overpay for convenience. Compare prices, delivery times, and checkout fees across Blinkit, Zepto, Swiggy Instamart & BigBasket.",
   keywords: [

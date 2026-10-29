@@ -10,7 +10,7 @@ export default function PrivacyPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-6">
           <h1 className="text-3xl font-extrabold text-slate-900">Privacy Policy</h1>
           <p className="text-sm text-slate-600 leading-relaxed">
-            QuickCompare does not collect, sell, or store precise GPS location coordinates without user consent. Location data (PIN code) is only used locally on your device to display relevant store availability and estimate delivery charges accurately.
+            SmartCart does not collect, sell, or store precise GPS location coordinates without user consent. Location data (PIN code) is only used locally on your device to display relevant store availability and estimate delivery charges accurately.
           </p>
           <h2 className="text-xl font-bold text-slate-800">Data Storage</h2>
           <p className="text-sm text-slate-600 leading-relaxed">

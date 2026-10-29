@@ -14,7 +14,7 @@ export default function AboutPage() {
           {/* Header */}
           <div className="space-y-3">
             <span className="text-xs font-bold uppercase tracking-wider text-indigo-600">
-              About QuickCompare
+              About SmartCart
             </span>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
               Transparent quick-commerce price comparison for India
@@ -58,7 +58,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-sm text-slate-600 leading-relaxed">
               <p>
-                <strong>No Scraping or TOS Violations:</strong> QuickCompare relies on modular platform adapters designed for authorized partner APIs, open feeds, or consented customer integrations. We strictly avoid unauthorized web scraping, bypassing CAPTCHAs, or violating terms of service.
+                <strong>No Scraping or TOS Violations:</strong> SmartCart relies on modular platform adapters designed for authorized partner APIs, open feeds, or consented customer integrations. We strictly avoid unauthorized web scraping, bypassing CAPTCHAs, or violating terms of service.
               </p>
               <p>
                 <strong>Transparent Demo Notice:</strong> When live platform APIs are pending partnership approval, our system runs mock adapters with realistic Indian retail pricing and explicitly labels them as <em>Demo Data</em>. We never fabricate live claims.

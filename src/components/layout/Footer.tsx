@@ -61,7 +61,7 @@ export function Footer({ className }: FooterProps) {
         </div>
 
         <div className="mt-6 pt-4 border-t border-gray-200 text-center text-xs text-gray-400">
-          © {currentYear} QuickCompare. All rights reserved.
+          © {currentYear} SmartCart. All rights reserved.
         </div>
       </div>
     </footer>

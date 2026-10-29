@@ -10,7 +10,7 @@ export default function TermsPage() {
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 space-y-6">
           <h1 className="text-3xl font-extrabold text-slate-900">Terms of Service</h1>
           <p className="text-sm text-slate-600 leading-relaxed">
-            QuickCompare is an independent comparison and discovery tool for quick commerce. Brand names, logos, and trademarks such as Blinkit, Zepto, Swiggy Instamart, and BigBasket belong to their respective owners.
+            SmartCart is an independent comparison and discovery tool for quick commerce. Brand names, logos, and trademarks such as Blinkit, Zepto, Swiggy Instamart, and BigBasket belong to their respective owners.
           </p>
           <h2 className="text-xl font-bold text-slate-800">Pricing and Availability Disclaimer</h2>
           <p className="text-sm text-slate-600 leading-relaxed">

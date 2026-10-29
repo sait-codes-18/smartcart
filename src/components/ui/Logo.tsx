@@ -11,15 +11,15 @@ export function Logo({ size = 'md', className = '' }: LogoProps) {
 
   return (
     <div className={`inline-flex items-center gap-2 ${className}`}>
-      {/* Brand Icon: rounded square with olive/dark bg and vibrant lime 'q' */}
+      {/* Brand Icon: rounded square with olive/dark bg and vibrant lime 's' */}
       <div
         className={`${iconSize} rounded-xl bg-slate-900 flex items-center justify-center font-black text-lime-400 shadow-xs tracking-tighter`}
         style={{ backgroundColor: '#1C2611' }}
       >
-        q
+        s
       </div>
       <span className={`${textSize} font-black tracking-tight text-slate-900`}>
-        quick<span className="text-amber-700">compare</span>
+        smart<span className="text-amber-700">cart</span>
       </span>
     </div>
   );

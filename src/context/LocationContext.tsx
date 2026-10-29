@@ -88,13 +88,14 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
     setLocationState(enriched);
     // Persist to localStorage
     if (typeof window !== "undefined") {
-      localStorage.setItem("quickcompare_location", JSON.stringify(enriched));
+      localStorage.setItem("smartcart_location", JSON.stringify(enriched));
     }
   }, []);
 
   const clearLocation = useCallback(() => {
     setLocationState(null);
     if (typeof window !== "undefined") {
+      localStorage.removeItem("smartcart_location");
       localStorage.removeItem("quickcompare_location");
     }
   }, []);
@@ -105,7 +106,7 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
   // Load saved location on mount
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("quickcompare_location");
+      const saved = localStorage.getItem("smartcart_location") || localStorage.getItem("quickcompare_location");
       if (saved) {
         try {
           setLocationState(JSON.parse(saved));
